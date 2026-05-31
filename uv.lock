@@ -10,6 +10,10 @@ resolution-markers = [
 name = "actuarial-model"
 version = "0.0.1"
 source = { editable = "." }
+dependencies = [
+    { name = "pytest" },
+    { name = "pytest-cov" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -26,6 +30,10 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [
+    { name = "pytest", specifier = ">=9.0.3" },
+    { name = "pytest-cov", specifier = ">=7.1.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [
